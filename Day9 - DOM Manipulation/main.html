@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample HTML</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: rgb(245, 241, 237);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      width: 80%;
+      height: 30vh;
+    }
+    .notmain {
+      width: 80%;
+      height: 30vh;
+      margin-top: 10px;
+    }
+    .notreallymain {
+      width: 80%;
+      height: 30vh;
+      margin-top: 10px;
+    }
+    .box1,
+    .box2,
+    .box3,
+    .box {
+      width: 180px;
+      height: 100px;
+      text-align: center;
+      padding-top: 50px;
+      border-radius: 15px;
+    }
+    .box1 {
+      background-color: red;
+    }
+    .box2 {
+      background-color: blue;
+    }
+    .border {
+      border: rgb(255, 162, 0) solid 5px;
+    }
+  </style>
+  <body>
+    <div class="main" id="cont">
+      <button onclick="addElement()">Add Element</button>
+      <div class="box1">
+        <p id="text">Box 1</p>
+        <button onclick="changeText()">Change Text</button>
+      </div>
+      <div class="box2">
+        <p>Box 2</p>
+        <button onclick="changeBg()">Change Background Color</button>
+    </div>
+    </div>
+    <div class="notmain">
+      <div class="in">
+        <input type="text" name="listIn" id="listIn" />
+        <button type="submit" onclick="addList()">Add to list</button>
+        <button type="submit" onclick="removeList()">Remove from list</button>
+      </div>
+      <div class="list">
+        <br />
+        <h3>List Manipulation :</h3>
+        <hr />
+        <br />
+        <ul id="myList">
+          <li>DOM Manipulation</li>
+          <li>Use of Element Selectors</li>
+        </ul>
+      </div>
+      <div class="img">
+        <button type="submit" onclick="changeImg()">Change Image</button>
+        <button type="submit" onclick="addBorder()">
+          Add/Remove Border Class
+        </button>
+        <img
+          id="myImg"
+          src="./1.png"
+          style="height: 100px; padding: 10px; margin: 20px"
+          alt=""
+          srcset=""
+        />
+      </div>
+      
+    </div>
+    <div class="notreallymain">
+     <br /><hr />
+      <br>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi
+        nisi dolore cumque magni illum vel nulla voluptas omnis veritatis?
+      </p>
+      <br>
+      <button id="changeBtn" type="submit">Change Paragraph content</button>
+    </div>
+    
+    <script src="Activity.js"></script>
+  </body>
+</html>
