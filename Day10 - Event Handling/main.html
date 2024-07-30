@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day10</title>
+    <style>
+      * {margin: 0;padding: 0;}
+      body {display: flex;justify-content: center;align-items: center;flex-direction: column; }
+      .activity1,.activity2,.activity3,.activity4,.activity5 {height: 15vh;width: 90%;}
+    </style>
+  </head>
+  <body>
+    <h3>Activity1</h3>
+    <div class="activity1">
+      <p id="para" style="text-align: center;">
+        Clicking here will activate click event listener!
+      </p>
+      <div style="border: red solid 2px; display: grid; "><img id="myImg" src="./1.png" style="place-self: center;height: 50px; padding: 10px; opacity: 100;" alt="" srcset="" /></div>
+    </div>
+    <h3>Activity2</h3>
+    <div class="activity2">
+        <div id="container" style="width: 100%;height: 50px; background-color: aqua;"></div>
+    </div>
+    <h3>Activity3</h3>
+    <div class="activity3">
+        <label for="myInput">Input field:</label>
+        <input type="text" name="log" id="myInput" style="width: 100%; height: 20px; padding: 2px;">
+        <p id="dynamicPara"></p>
+    </div>
+    <h3>Activity4</h3>
+    <div class="activity4">
+        <form>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date"><br>
+            <label for="week">Choose a week date</label>
+            <select name="week" id="week">
+                <option value="default">Choose a day</option>
+                <option value="sunday">Sunday</option>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuseday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+            </select>
+            <button id="sub" type="submit">Submit</button>
+        </form>
+        <p style="border: 1px solid red; height: 30px; margin-top: 5px; padding: 5px" id="formVal"></p>
+    </div>
+    <h3>Activity5</h3>
+    <div class="activity5">
+      <ui id="list">
+        <li>This</li>
+        <li>is</li>
+        <li>a</li>
+        <li>list</li>
+      </ui>
+      <p style="border: 1px solid red; height: 30px; margin-top: 5px; padding: 5px;" id="log"></p>
+      <button id="addCard" style="margin-top: 10px;">Add Dynamic Card</button>
+      <div style="border: 1px solid red; padding: 5px; height: fit-content; margin-top: 5px; display: flex; flex-direction: row; flex-wrap: wrap;" id="cont">
+        
+              </div>
+    </div>
+    <script src="Activity.js"></script>
+  </body>
+</html>
